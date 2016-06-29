@@ -1,5 +1,5 @@
 {
-    "name": "horde/horde-test",
+    "name": "x59/horde-test",
     "description": "Horde testing base classes",
     "type": "library",
     "homepage": "https://pear.horde.org",
@@ -21,13 +21,16 @@
     "repositories": [
         {
             "type": "pear",
-            "url": "https://pear.horde.org"
+            "url": "http://pear.horde.org"
         }
     ],
+    "autoload": {
+        "classmap": "lib/"
+    },
     "require": {
         "php": ">=5.3.0,<=8.0.0alpha1",
-        "pear-pear.horde.org/Horde_Support": ">=2.0.0@stable,<=3.0.0alpha1@stable",
-        "pear-pear.horde.org/Horde_Util": ">=2.0.0@stable,<=3.0.0alpha1@stable"
+        "x59/horde-support": ">=2.0.0@stable,<=3.0.0alpha1@stable",
+        "x59/horde-util": ">=2.0.0@stable,<=3.0.0alpha1@stable"
     },
     "suggest": {
         "pear-pear.horde.org/Horde_Cli": ">=2.0.0@stable,<=3.0.0alpha1@stable",
